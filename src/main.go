@@ -21,7 +21,7 @@ func main() {
 	numOfp = "10"
 	scl = 0.15
 	points = &Arr{make([]Pos, 0), 0, 0, 0, 0}
-	name = "DataSets/ConjuntoDeDatosCon" + numOfp + "abejas.txt"
+	name = "../DataSets/ConjuntoDeDatosCon" + numOfp + "abejas.txt"
 	fil, err := os.Open(name)
 	if err != nil {
 		panic(err)

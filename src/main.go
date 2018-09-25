@@ -80,6 +80,7 @@ func main() {
 		Width:     int(xm*scl + 30),
 		Height:    int(ym*scl + 30),
 		FrameRate: 1,
+		Title:     "Quadtree",
 	})
 
 	qt = NewQuadtree(0, 0, xm, ym)

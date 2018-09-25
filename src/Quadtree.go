@@ -173,7 +173,7 @@ func (qt *Quadtree) detectAux(rang float64) []*Duple {
 	qr := qt.Query(NewCircle(qt.point.x, qt.point.y, rang))
 	fmt.Printf("List: %v\n len: %v.\n", qr, len(qr))
 	for _, e := range qr {
-		if qt.point.data < e.data {
+		if qt.point.data != e.data {
 			fmt.Printf("adding element %v - %v.", qt.point.data, e.data)
 			list = append(list, NewDuple(qt.point, e))
 			qt.point.status = true
